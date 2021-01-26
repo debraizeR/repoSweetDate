@@ -1,6 +1,14 @@
-<?php
+<?php 
 
-$bonjour = "Bonjour à tous";
-$profil = "Debraize Raphael 23 ans";
+if(isset($_COOKIE["cookieFirstname"]))
+{
+    $firstname = $_COOKIE["cookieFirstname"]; //header("location: /views/lovers.php");
+} 
+else
+{
+    echo "faux";
+}
+
+
 
 ?>
