@@ -1,6 +1,4 @@
-<?php   
-?>
-
+<?php require("controllers/index_controller.php");?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -42,7 +40,7 @@
         <div class="card-body">
 
           <p class="card-text">Il est temps de rencontrer votre moitié.</p>
-          <a href="#" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Vous recherchez un homme</a>
+          <a href="#" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" name="gender" value="homme">Vous recherchez un homme</a>
 
 
           <!-- Modal -->
@@ -78,32 +76,27 @@
                       <input type="radio" id="homme" name="genderSearch" value="homme" required>Homme</input><br>
                       <input type="radio" id="femme" name="genderSearch" value="femme">Femme</input><br>
                     </div>
-
-
-                    <input type="submit" id="confirm" name="confirm" value="Confirmer">
-                  </form>
-
-                  <?php include("controllers/index_controller.php");
-
-                  if (!empty($_POST["firstname"])) {
-                    echo $firstname;
-                  } else {
-                    echo "vide";
-                  }  ?>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="submit" id="confirm" name="confirm" class="btn btn-primary">Save changes</button>
                 </div>
+                </form>
               </div>
             </div>
           </div>
 
-          <a href="#" class="btn btn-primary mt-3">Vous recherchez une femme</a>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" name="gender" value="femme">Vous recherchez une femme</a>
         </div>
       </div>
     </div>
+    <?php 
 
+if (!empty($_POST["firstname"])) {
+  echo $firstname;
+} else {
+  echo "vide";
+}  ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>

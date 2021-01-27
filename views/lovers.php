@@ -1,3 +1,5 @@
+<?php require("../controllers/lovers_controller.php");?>
+
 <!DOCTYPE html>
 <html>
 
@@ -11,6 +13,9 @@
 
 <body>
 <div class="container">
+    <div class="row">
+        <?= $firstname." ".$lastname; ?>
+    </div>
     <div class= "row justify-content-between">
     <?php
 
@@ -196,6 +201,7 @@
             "Ville" => "Le Havre",
         ),
     );
+
 
     foreach ($profiles as $key => $value) {
         $idimage = $key;
