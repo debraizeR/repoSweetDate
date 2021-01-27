@@ -6,7 +6,7 @@ if(isset($_COOKIE["cookieFirstname"]))
 } 
 else
 {
-    echo "faux";
+    echo " ";
 }
 
 
