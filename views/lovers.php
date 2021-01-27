@@ -14,7 +14,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <?= $firstname." ".$lastname; ?>
+        <?= $firstname." ".$lastname." ".$choice; ?>
     </div>
     <div class= "row justify-content-between">
     <?php
