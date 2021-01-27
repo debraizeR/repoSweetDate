@@ -32,7 +32,7 @@ function regexFirstName($firstname)
 
 function regexMail($testMail)
 {
-    $regex = "/^[a-zA-Z][a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,4}$/";
+    $regex = "/^[a-zA-Z][a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/i";
     if(preg_match($regex, $testMail))
     {
         setcookie("cookieMail", $testMail, time()+3600*24, "/");
