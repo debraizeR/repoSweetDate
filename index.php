@@ -1,10 +1,4 @@
-<?php   if(!empty($_POST["firstname"])){setcookie("cookieFirstname", $_POST["firstname"],time()+3600*24, "/"); }
-        if(!empty($_POST["lastname"])){setcookie("cookieLastname", $_POST["lastname"], time()+3600*24, "/"); } 
-        if(!empty($_POST["age"])){setcookie("cookieAge", $_POST["age"], time()+3600*24, "/");}
-        if(!empty($_POST["gender"])){setcookie("cookieGender", $_POST["gender"], time()+3600*24, "/");}
-        if(!empty($_POST["mail"])){setcookie("cookieMail", $_POST["mail"], time()+3600*24, "/");}
-        if(!empty($_POST["zipcode"])){setcookie("cookieZipcode", $_POST["zipcode"], time()+3600*24, "/");}
-        if(!empty($_POST["genderSearch"])){setcookie("cookieGenderSearch", $_POST["genderSearch"], time()+3600*24, "/");}
+<?php   
 ?>
 
 
@@ -18,7 +12,7 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <?php include("controllers/index_controller.php"); ?>
+    
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -89,7 +83,7 @@
         <input type="submit" id="confirm" name="confirm" value="Confirmer">
     </form>
 
-    <?php include("controllers/index_controller.php"); 
+    <?php 
     
     if(!empty($_POST["firstname"]))
     {
