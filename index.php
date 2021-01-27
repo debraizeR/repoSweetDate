@@ -15,33 +15,29 @@
 </head>
 
 <body>
-  
+<div class="row row1 justify-content-start"> 
+<div class="col-3" >
+<h2 class="logo">SD</h2
+</div>
+</div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light-dark">
-    <div class="container-fluid">
-
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="">Accueil</a>
-        <a class="nav-link active" aria-current="page" href="../repoSweetDate/views/lovers.php">Nos célibataires</a>
-        <a class="nav-link" href="#"></a>
-
-        <button type="button" class="btn1 btn-secondary">Se connecter</button>
-      </div>
+<div class="row row1 justify-content-end "> 
+    <div class="col-3" >
+    <button type="button" class="btn1 justify-content-center  "><a class="connexion" href="/views/user.php">Se connecter</a></button>
     </div>
-    </div>
-  </nav>
 
+</div>
   <div class="header-home">
     <h1 class="title text-center align-center">SWEET DATE</h1>
-  </div>
-  <div class="container">
+    <div class="container">
 
-    <div class="row d-flex justify-content-center mt-5">
-      <div class="card" style="width: 28rem;">
+    <div class="row d-flex mt-5">
+      <div class="col offset-2">
+      <div class="card m-3 " style="width: 28rem;">
 
-        <div class="card-body">
+        <div class="card-body cardindex">
 
-          <p class="card-text">Il est temps de rencontrer votre moitié.</p>
+          <p class="card-text slogan">Il est temps de rencontrer votre moitié.</p>
           <a href="#" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Vous recherchez un homme</a>
 
 
@@ -103,6 +99,12 @@
         </div>
       </div>
     </div>
+
+    </div>
+
+    </div>
+  </div>
+  
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

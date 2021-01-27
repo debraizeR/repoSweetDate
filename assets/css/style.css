@@ -1,22 +1,15 @@
 
+  @font-face {
+    font-family: Kg1;
+    src: url("/assets/fonts/KG1.ttf");
+  }
+    
     @font-face {
-      font-family: Omegle;
-      src: url("/assets/fonts/omegle.ttf");
+      font-family: Appolo;
+      src: url("/assets/fonts/appolo.otf");
     }
-    @font-face {
-      font-family: Kiss Melody;
-      src: url("/assets/fonts/KissMelody.ttf");
-    }
-    body{
-
-    }
-    h1.title {
-      font-family: Kiss Melody !important;
-      src: url("/assets/fonts/KissMelody.ttf");
-    }
-
     .navbar {
-      background-color: #5CC4A8;
+      background-color: white;
       font-size: 1.2em;
     }
 
@@ -26,6 +19,61 @@
 
     }
 
+    .btn1:hover {
+      background-color: white;
+      color: black;
+    }
+    
+   
+    
+    body{
+      font-family: Appolo;
+      src: url("/assets/fonts/appolo.otf");
+      letter-spacing: 1px;
+    }
+
+    .header-home {
+      background: grey url(/assets/img/img.jpg) top center no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+       background-position: right;
+     color: white;
+     padding: 2%;
+     box-sizing: content-box;
+     text-align: center;
+     height: 80vh;
+     margin-bottom: 1%;
+     padding-bottom: 2em;
+   }
+    h1.title {
+      font-family: Kg1;
+      font-size: 4em;
+      src: url("/assets/fonts/KG1.ttf");
+      text-shadow: 4px 4px 3px black;
+      color: white;
+      
+    }
+    h2 .logo{
+      color:#165D5A
+      font-family: Kg1;
+    src: url("/assets/fonts/KG1.ttf");
+    }
+    .slogan{
+      color: white;
+    }
+    .connexion{
+      text-decoration: none;
+      color: white;
+    }
+    .row1{
+      background-color:white ;
+  
+    }
+
+    .btn1 {
+      background-color: #FF4D4D;
+      border: #165D5A solid 2px;
+    }
     .btn1:hover {
       background-color: white;
       color: black;
@@ -42,9 +90,8 @@
       border: white solid 2px;
     }
 
-    .card {
-      background-color: #165D5A;
-      
+    .cardindex {
+      background-color:white;  
     }
 
     .modal {
