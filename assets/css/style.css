@@ -1,0 +1,52 @@
+
+    @font-face {
+      font-family: Omegle;
+      src: url("/assets/fonts/omegle.ttf");
+    }
+    @font-face {
+      font-family: Kiss Melody;
+      src: url("/assets/fonts/KissMelody.ttf");
+    }
+    body{
+
+    }
+    h1.title {
+      font-family: Kiss Melody !important;
+      src: url("/assets/fonts/KissMelody.ttf");
+    }
+
+    .navbar {
+      background-color: #5CC4A8;
+      font-size: 1.2em;
+    }
+
+    .btn1 {
+      background-color: #FF4D4D;
+      border: #165D5A solid 2px;
+
+    }
+
+    .btn1:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .btn {
+
+      background-color: #439D84;
+      border: white solid 2px;
+    }
+
+    .card {
+      background-color: #165D5A;
+      
+    }
+
+    .modal {
+      background-color: #439D84;
+    }
