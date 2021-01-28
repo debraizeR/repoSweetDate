@@ -1,9 +1,13 @@
 <?php 
 
+$testCookie = false;
+
+
 if(isset($_COOKIE["cookieFirstname"]) && isset($_COOKIE["cookieLastname"]) && isset($_COOKIE["cookieAge"])
 && isset($_COOKIE["cookieGender"]) && isset($_COOKIE["cookieMail"]) && isset($_COOKIE["cookieZipcode"]) && isset($_COOKIE["cookieChoice"]))
 {
-    header("location: /views/lovers.php");
+    $testCookie = true;
+    header("Location: /views/lovers.php");
     exit();
 } 
 else
@@ -11,23 +15,48 @@ else
     if(!empty($_POST["firstname"]) && !empty($_POST["lastname"]) && !empty($_POST["age"]) && !empty($_POST["gender"]) 
     && !empty($_POST["mail"]) && !empty($_POST["zipcode"]) && !empty($_POST["choice"]))
     {
-        setcookie("cookieFirstname", $_POST["firstname"],time()+3600*24, "/"); 
-        setcookie("cookieLastname", $_POST["lastname"], time()+3600*24, "/");
-        setcookie("cookieAge", $_POST["age"], time()+3600*24, "/");
+        regexFirstName($_POST["firstname"]);
+        regexLastName($_POST["lastname"]);
+        regexAge($_POST["age"]);
         setcookie("cookieGender", $_POST["gender"], time()+3600*24, "/");
         regexMail($_POST["mail"]);
-        setcookie("cookieZipcode", $_POST["zipcode"], time()+3600*24, "/");
+        regexZipcode($_POST["zipcode"]);
         setcookie("cookieChoice",$_POST["choice"], time()+3600*24, "/");
-        header("location: index.php");
+        header("Location: index.php");
         exit();
         
     }
     
 }
 
-function regexFirstName($firstname)
+function regexFirstName($testFirstname)
 {
-    $regex = "/aerzgetr/i";
+    $regex = "/^[A-Z][\p{L}-]*$/i";
+    if(preg_match($regex, $testFirstname))
+    {
+        setcookie("cookieFirstname", $_POST["firstname"],time()+3600*24, "/"); 
+    }
+    
+}
+
+function regexLastName($testLastname)
+{
+    $regex = "/^[A-Z][\p{L}-]*$/i";
+    if(preg_match($regex, $testLastname))
+    {
+        setcookie("cookieLastname", $_POST["lastname"], time()+3600*24, "/");
+    }
+    
+}
+
+function regexAge($testAge)
+{
+    $regex = "/^[0-9]{1,2}$/i";
+    if(preg_match($regex, $testAge) && $testAge>= 18)
+    {
+        setcookie("cookieAge", $_POST["age"], time()+3600*24, "/");
+    }
+    
 }
 
 function regexMail($testMail)
@@ -37,11 +66,17 @@ function regexMail($testMail)
     {
         setcookie("cookieMail", $testMail, time()+3600*24, "/");
     }
-    else
-    {
-        setcookie("cookieMail", "echec", time()+3600*24, "/");
-    }
+    
 }
 
+function regexZipcode($testZipcode)
+{
+    $regex = "/^[0-9]{5}$/i";
+    if(preg_match($regex, $testZipcode))
+    {
+        setcookie("cookieZipcode", $_POST["zipcode"], time()+3600*24, "/");
+    }
+    
+}
 
 ?>

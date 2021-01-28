@@ -71,7 +71,7 @@
     .row1{
       background-color:white ;
       height: 2.5em;
-  
+      
     }
 
     .btn1 {
@@ -105,7 +105,8 @@
     }
 
     .modal {
-      background-color: #bfaaa0;
+      background-color: #BFAAA0;
+      color: black;
     }
 
    .card2{
@@ -121,3 +122,7 @@
    .bodylovers{
      background-color:#BFAAA0;
    }
+#photo{
+  height:50%;
+  width: 100%;
+}
