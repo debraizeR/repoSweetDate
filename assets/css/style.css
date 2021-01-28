@@ -33,7 +33,7 @@
     
     body{
       box-sizing: content-box;
-width: 100%;
+      width: 100%;
       font-family: Appollo;
       src: url("/assets/fonts/APOLLO.otf");
       letter-spacing: 1px;
@@ -78,6 +78,12 @@ width: 100%;
     .btn1 {
       background-color: white;
       border: #E8B6A1 solid 3px;
+  
+    }
+
+    .btnprofil{
+    text-decoration: none;
+
     }
     .btn1:hover {
       background-color: white;
@@ -137,3 +143,4 @@ width: 100%;
 .row2{
   font-weight: 1em;
 }
+
