@@ -16,17 +16,14 @@
 <body class="bodylovers">
 <nav class="navbar navbar-expand-lg navbar-light bg-light-dark">
     <div class="container-fluid d-flex justify-content-between">
-
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="../index.php">Accueil</a>
         <a class="nav-link active" aria-current="page" href="">Nos célibataires</a>
         <a class="nav-link" href="#"></a>
-
         <a type="button" class="btn1 btn connexion " href="../views/user.php">Se connecter</a>
       </div>
     </div>
-    </div>
-  </nav>
+</nav>
     <div class="container">    
         <div class= "row justify-content-between">
         <?php
