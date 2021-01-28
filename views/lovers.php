@@ -30,7 +30,7 @@
     <div class="row">
         <?= $firstname." ".$lastname." ".$age." ".$gender." ".$mail." ".$zipcode." ".$choice; ?>
     </div>
-    <div class= "row justify-content-between">
+    <div class= "row2 justify-content-between">
     <?php
 
     $profiles = array(
