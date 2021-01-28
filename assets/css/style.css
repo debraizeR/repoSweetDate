@@ -16,20 +16,10 @@
       font-size: 1.2em;
     }
 
-    .btn1 {
-      background-color: #FF4D4D;
-      border: #165D5A solid 2px;
-
-    }
-
-    .btn1:hover {
-      background-color: white;
-      color: black;
-    }
     
     body{
       box-sizing: content-box;
-width: 100%;
+      width: 100%;
       font-family: Appollo;
       src: url("/assets/fonts/APOLLO.otf");
       letter-spacing: 1px;
@@ -39,7 +29,7 @@ width: 100%;
       background: grey url(/assets/img/img.jpg) top center no-repeat;
        background-size: cover;
        background-attachment: fixed;
-       background-position: left;
+       background-position: right;
      color: white;
      padding: 2%;
      box-sizing: content-box;
@@ -61,16 +51,18 @@ width: 100%;
       color:white;
       text-shadow: black;
     }
-    .connexion{
-      text-decoration: none;
-      color: white;
-    }
     .row1{
       background-color:white ;
       height: 4em;
       
     }
 
+    .btn {
+
+      background-color:#BFAAA0 ;
+      border: white solid 3px;
+     
+    }
     
     .btn1:hover {
       background-color: white;
@@ -87,12 +79,13 @@ width: 100%;
       font-size: 1.5em;
 
     }
-    .btn {
-
-      background-color:#BFAAA0 ;
-      border: white solid 3px;
-     
+    .btn2{
+      background-color: #e8b6a1;
+      border:#E8B6A1 solid 2px;
+          font-size: 150%;
+      color: white;
     }
+    
 
     .cardindex {
       background-color:white;  
@@ -131,11 +124,7 @@ width: 100%;
   font-weight: 1em;
 }
 
-.btn2{
-  background-color: #e8b6a1;
-  border:#E8B6A1 solid 2px;
-      font-size: 150%;
-}
+
 
 .imgNav{
   max-height: 3rem;

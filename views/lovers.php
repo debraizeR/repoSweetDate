@@ -20,7 +20,7 @@
         <a class="nav-link active" aria-current="page" href="../index.php">Accueil</a>
         <a class="nav-link active" aria-current="page" href="">Nos célibataires</a>
         <a class="nav-link" href="#"></a>
-        <a type="button" class="btn1 btn connexion " href="../views/user.php">Se connecter</a>
+        <a type="button" class="btn btn2  connexion " href="../views/user.php">Se connecter</a>
       </div>
     </div>
 </nav>
@@ -251,8 +251,7 @@
         foreach ($profiles as $key => $value) 
         {
             $idimage = $key;
-            if($value["Genre"] == $_COOKIE["cookieChoice"])
-            
+            if(isset($_COOKIE["cookieChoice"]) && $value["Genre"] == $_COOKIE["cookieChoice"])
             {
                 ?>
                 <div class= "col-md-4 my-3">
@@ -282,7 +281,41 @@
                         </div>
                     </div>
                 </div>
-            <?php }
+            <?php 
+            }
+            elseif(!isset($_COOKIE["cookieChoice"]))
+            {
+                ?>
+                <div class= "col-md-4 my-3">
+                    <div class="card card2">     
+                        <div class="card-body">                        
+                            <div class="row">
+                                <div class="col-6">            
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                    <?php 
+                                    if (is_array($value)) 
+                                    {
+                                        foreach ($value as $key => $value) {
+                                            echo $key . " : " . $value . "<br>";    
+                                        }
+                                    }
+                                    ?>        
+                                    </p>
+                                </div>
+                                <div class= "col-6">
+                                    <img class="img-fluid" id="photo" src="../assets/img/profils/<?= $idimage ?>.jpg"/>
+                                
+                                    <a href="#" class="btn btn-primary">J'aime <i class='far fa-thumbs-up' style='font-size:36px'></i></a>
+                                    <a href="" class="btn btn-primary"><i class="far fa-envelope"></i> Contactez-moi</a>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            <?php 
+            }
+
             
         }
         ?>
