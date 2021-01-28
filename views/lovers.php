@@ -284,7 +284,7 @@
         <img class="img-fluid" id="photo" src="../assets/img/profils/<?= $idimage ?>.jpg"/>
        
         <a href="#" class="btn btn-primary">J'aime <i class='far fa-thumbs-up' style='font-size:36px'></i></a>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+         <a href="" clas="btn">Contactez-moi</a>
     </div>
 
         </div>
