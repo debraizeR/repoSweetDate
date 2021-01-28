@@ -1,6 +1,4 @@
-<?php   
-?>
-
+<?php require("controllers/index_controller.php");?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -38,10 +36,10 @@
       <div class="card m-3 " style="width: 28rem;">
 
         <div class="card-body cardindex">
-
+        <form action="index.php" method="post">
           <p class="card-text slogan">Il est temps de rencontrer votre moitié.</p>
-          <a href="#" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Vous recherchez un homme</a>
-
+          <a href="#" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" id="homme" name="choice" value="homme">Vous recherchez un homme</a>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" id="femme" name="choice" value="femme">Vous recherchez une femme</a>
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -52,7 +50,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <form action="index.php" method="post">
+                  
                     <label for="firstname">Prénom : </label><br>
                     <input type="text" id="firstname" name="firstname" required><br>
                     <label for="lastname">Nom : </label><br>
@@ -71,45 +69,45 @@
                     <label for="picture">Photo de profil : </label><br>
                     <label for="description">Description : </label><br>
                     <textarea rows="4" id="description" name="description" required></textarea><br>
-                    <label for="genderSearch">Genre recherché : </label><br>
-                    <div>
-                      <input type="radio" id="homme" name="genderSearch" value="homme" required>Homme</input><br>
-                      <input type="radio" id="femme" name="genderSearch" value="femme">Femme</input><br>
-                    </div>
-
-
-                    <input type="submit" id="confirm" name="confirm" value="Confirmer">
-                  </form>
-
-                  <?php include("controllers/index_controller.php");
-
-                  if (!empty($_POST["firstname"])) {
-                    echo $firstname;
-                  } else {
-                    echo "vide";
-                  }  ?>
+                    
                 </div>
                 <div class="modal-footer">
+                  <input type="hidden" name="choice" id="choice">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="submit" id="confirm" name="confirm" class="btn btn-primary">Save changes</button>
                 </div>
+                
               </div>
             </div>
           </div>
 
-          <a href="#" class="btn btn-primary mt-3">Vous recherchez une femme</a>
+          
         </div>
+        </form>
       </div>
     </div>
+    <?php 
 
-    </div>
-
-    </div>
-  </div>
+    
   
+?>
 
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <script>
+  const homme = document.getElementById('homme');
+  const choice = document.getElementById('choice');
+  homme.addEventListener('click', function(){
+    choice.value = 'homme';
+  })
+  
+  const femme = document.getElementById('femme');
+  femme.addEventListener('click', function(){
+    choice.value = 'femme';
+  })
+
+  </script>
 </body>
 
 </html>

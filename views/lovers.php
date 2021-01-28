@@ -1,3 +1,5 @@
+<?php require("../controllers/lovers_controller.php");?>
+
 <!DOCTYPE html>
 <html>
 
@@ -24,6 +26,9 @@
     </div>
   </nav>
 <div class="container">
+    <div class="row">
+        <?= $firstname." ".$lastname." ".$age." ".$gender." ".$mail." ".$zipcode." ".$choice; ?>
+    </div>
     <div class= "row justify-content-between">
     <?php
 
@@ -244,6 +249,7 @@
             "Description" => " <br>Timide et romantique, faisons connaissance",
         ),
     );
+
 
     foreach ($profiles as $key => $value) {
         $idimage = $key;
