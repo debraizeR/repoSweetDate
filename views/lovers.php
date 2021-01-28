@@ -252,41 +252,35 @@
 
     foreach ($profiles as $key => $value) {
         $idimage = $key;
-
+        if($value["Genre"] == $_COOKIE["cookieChoice"])
+        {
         //echo $key . "<br>";
         ?>
         <div class= "col-md-6">
-        <div class="card">
-            
-      
+        <div class="card">         
         <div class="card-body">
             <div class="row">
-                <div class="col">
-            
+                <div class="col">            
             <h5 class="card-title">Card title</h5>
             <p class="card-text">
-
-        <?php 
-        if (is_array($value)) {
-            foreach ($value as $key => $value) {
-                echo $key . " : " . $value . "<br>";
-    
+            <?php 
+            if (is_array($value)) {
+                foreach ($value as $key => $value) {
+                    echo $key . " : " . $value . "<br>";
+                }
             }
-    
-        }
-        ?>
-        
-    </p></div>
-        <div class= "col">
-        <img id="photo" src="../assets/img/profils/profil1.jpg"/>
-        </div>
-
+        ?>        
+        </p></div>
+            <div class= "col">
+            <img id="photo" src="../assets/img/profils/profil1.jpg"/>
+            </div>
     </div>
         <a href="#" class="btn btn-primary">J'aime <i class='far fa-thumbs-up' style='font-size:36px'></i></a>
         </div>
         </div></div>
 
         <?php
+        }
         echo "<br>";
     }
     ?>

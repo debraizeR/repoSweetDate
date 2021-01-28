@@ -40,8 +40,8 @@
         <div class="card-body cardindex">
         <form action="index.php" method="post">
           <p class="card-text slogan">Il est temps de rencontrer votre moitié.</p>
-          <a href="#" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" id="homme" name="choice" value="homme">Vous recherchez un homme</a>
-          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" id="femme" name="choice" value="femme">Vous recherchez une femme</a>
+          <a href="#" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Homme" name="choice" value="Homme">Vous recherchez un homme</a>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Femme" name="choice" value="Femme">Vous recherchez une femme</a>
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -97,15 +97,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
   <script>
-  const homme = document.getElementById('homme');
+  const homme = document.getElementById('Homme');
   const choice = document.getElementById('choice');
   homme.addEventListener('click', function(){
-    choice.value = 'homme';
+    choice.value = 'Homme';
   })
   
-  const femme = document.getElementById('femme');
+  const femme = document.getElementById('Femme');
   femme.addEventListener('click', function(){
-    choice.value = 'femme';
+    choice.value = 'Femme';
   })
 
   </script>

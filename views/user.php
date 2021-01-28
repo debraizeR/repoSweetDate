@@ -28,13 +28,25 @@ if(isset($_POST["deleteCookie"])){deleteAllCookie(); header("Location: ../index.
   </nav>
 <div class="container">
     <div class="row">
-        <div class="col-6">
-            <?= $firstname." ".$lastname." ".$age." ".$gender." ".$mail." ".$zipcode." ".$choice; ?>
+        <div class="col-8">
+            <p>Prénom : <?= $firstname; ?></p>
+            <p>Nom : <?= $lastname; ?></p>
+            <p>Age : <?= $age; ?></p>
+            <p>Genre : <?= $gender; ?></p>
+            <p>Adresse mail : <?= $mail; ?></p>
+            <p>Code postal : <?= $zipcode; ?></p>
+            <p>Genre recherché : <?= $choice; ?></p>
         </div>
-        <div class="col-6">
-        <form action="user.php" method="post">
-        <button type="submit" class="btn justify-content-center" id="deleteCookie" name="deleteCookie">Supprimer les cookies</button>
-        </form>
+        <div class="col-4">
+            <div class="row justify-content-center">
+                <form action="user.php" method="post">
+                    <button type="submit" class="btn justify-content-center" id="deleteCookie" name="deleteCookie">Supprimer les cookies</button>
+                </form>
+            </div>
+            <div class="row justify-content-center">
+                <a type="button" class="btn justify-content-center" id="meetc" name="meetic" href="https://www.meetic.fr/">TAKE MY MONEY</a>
+                    
+            </div>
         </div>
     </div>
     
