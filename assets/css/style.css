@@ -8,6 +8,12 @@
       font-family: Appolo;
       src: url("/assets/fonts/appolo.otf");
     }
+    
+    #logo{
+      height:4em;
+      width:4em;
+    }
+    
     .navbar {
       background-color: white;
       font-size: 1.2em;
@@ -36,7 +42,7 @@
       background: grey url(/assets/img/img.jpg) top center no-repeat;
        background-size: cover;
        background-attachment: fixed;
-       background-position: right;
+       background-position: left;
      color: white;
      padding: 2%;
      box-sizing: content-box;
@@ -67,12 +73,13 @@
     }
     .row1{
       background-color:white ;
+      height: 2.5em;
   
     }
 
     .btn1 {
-      background-color: #FF4D4D;
-      border: #165D5A solid 2px;
+      background-color: white;
+      border: #E8B6A1 solid 3px;
     }
     .btn1:hover {
       background-color: white;
@@ -86,7 +93,7 @@
 
     .btn {
 
-      background-color: #439D84;
+      background-color: #E8B6A1;
       border: white solid 2px;
     }
 

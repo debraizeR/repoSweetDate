@@ -14,11 +14,11 @@
     <div class="container-fluid">
 
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="">Accueil</a>
+        <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
         <a class="nav-link active" aria-current="page" href="../repoSweetDate/views/lovers.php">Nos célibataires</a>
         <a class="nav-link" href="#"></a>
 
-        <button type="button" class="btn1 btn-secondary">Se connecter</button>
+        <button type="button" class="btn1 btn">Se connecter</button>
       </div>
     </div>
     </div>
@@ -277,7 +277,7 @@
         </div>
 
     </div>
-        <a href="#" class="btn btn-primary">J'aime</a>
+        <a href="#" class="btn btn-primary">J'aime <i class='far fa-thumbs-up' style='font-size:36px'></i></a>
         </div>
         </div></div>
 
@@ -287,7 +287,7 @@
     ?>
     </div>
     </div>
-    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 
