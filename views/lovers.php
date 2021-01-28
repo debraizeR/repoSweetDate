@@ -16,11 +16,10 @@
     <div class="container-fluid">
 
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
-        <a class="nav-link active" aria-current="page" href="../repoSweetDate/views/lovers.php">Nos célibataires</a>
+        <a class="nav-link active" aria-current="page" href="../index.php">Accueil</a>
+        <a class="nav-link active" aria-current="page" href="">Nos célibataires</a>
         <a class="nav-link" href="#"></a>
-
-        <button type="button" class="btn1 btn">Se connecter</button>
+        <a type="button" class="btn1 btn connexion" href="../views/user.php">Profil</a></button>
       </div>
     </div>
     </div>

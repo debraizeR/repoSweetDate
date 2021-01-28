@@ -74,7 +74,7 @@
     .row1{
       background-color:white ;
       height: 2.5em;
-  
+      
     }
 
     .btn1 {
@@ -102,5 +102,6 @@
     }
 
     .modal {
-      background-color: #439D84;
+      background-color: #BFAAA0;
+      color: black;
     }

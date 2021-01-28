@@ -1,4 +1,6 @@
-<?php require("controllers/index_controller.php");?>
+<?php require("controllers/index_controller.php");
+      if($testCookie){header("Location: /views/lovers.php");}
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -23,7 +25,7 @@
 
 <div class="row row1 justify-content-end "> 
     <div class="col-3" >
-    <button type="button" class="btn1 justify-content-center  "><a class="connexion" href="/views/user.php">Se connecter</a></button>
+    <a type="button" class="btn justify-content-center connexion" href="/views/user.php">Se connecter</a>
     </div>
 
 </div>
@@ -51,10 +53,10 @@
                 </div>
                 <div class="modal-body">
                   
-                    <label for="firstname">Prénom : </label><br>
-                    <input type="text" id="firstname" name="firstname" required><br>
                     <label for="lastname">Nom : </label><br>
                     <input type="test" id="lastname" name="lastname" required><br>
+                    <label for="firstname">Prénom : </label><br>
+                    <input type="text" id="firstname" name="firstname" required><br>
                     <label for="age">Age : </label><br>
                     <input type="text" id="age" name="age" required><br>
                     <label for="gender">Genre : </label><br>
@@ -66,7 +68,6 @@
                     <input type="text" id="mail" name="mail" required><br>
                     <label for="zipcode">Code postal : </label><br>
                     <input type="text" id="zipcode" name="zipcode" required><br>
-                    <label for="picture">Photo de profil : </label><br>
                     <label for="description">Description : </label><br>
                     <textarea rows="4" id="description" name="description" required></textarea><br>
                     
