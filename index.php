@@ -9,7 +9,7 @@
   <title>Sweet Date</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/img/fav.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo3.png">
 
 
 </head>
@@ -17,13 +17,13 @@
 <body>
 <div class="row row1 justify-content-start"> 
 <div class="col-3" >
-<img class="" id="logo" src="/assets/img/logo1.png"/>
+<img class="" id="logo" src="/assets/img/logo3.png"/>
 </div>
 </div>
 
 <div class="row row1 justify-content-end "> 
     <div class="col-3" >
-    <button type="button" class="btn1 justify-content-center  "><a class="connexion" href="/views/user.php">Se connecter</a></button>
+    <button type="button" class="btn1"><a class="connexion" href="/views/user.php">Se connecter</a></button>
     </div>
 
 </div>
@@ -33,7 +33,7 @@
 
     <div class="row d-flex mt-5">
       <div class="col offset-2">
-      <div class="card m-3 " style="width: 28rem;">
+      <div class="card card-deck m-3 " style="width: 28rem;">
 
         <div class="card-body cardindex">
         <form action="index.php" method="post">

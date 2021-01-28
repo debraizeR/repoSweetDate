@@ -12,6 +12,7 @@
     #logo{
       height:4em;
       width:4em;
+      
     }
     
     .navbar {
@@ -59,11 +60,7 @@
       color: white;
       
     }
-    h2 .logo{
-      color:#165D5A
-      font-family: Kg1;
-    src: url("/assets/fonts/KG1.ttf");
-    }
+   
     .slogan{
       color: white;
     }
@@ -90,11 +87,17 @@
       background-color: white;
       color: black;
     }
+    .btn1{
+      background-color:#bfaaa0;
+      border:#E8B6A1 solid 2px;
+      font-size: 1.5em;
 
+    }
     .btn {
 
       background-color: #E8B6A1;
-      border: white solid 2px;
+      border: white solid 3px;
+     
     }
 
     .cardindex {
@@ -102,5 +105,19 @@
     }
 
     .modal {
-      background-color: #439D84;
+      background-color: #bfaaa0;
     }
+
+   .card2{
+     height: 28em;
+     border: #E8B6A1 solid 3px;
+     border-radius: 5%;
+
+   }
+   .card
+   {
+    border: #E8B6A1 solid 3px;
+   }
+   .bodylovers{
+     background-color:#BFAAA0;
+   }
