@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_COOKIE["cookieFirstname"]) && isset($_COOKIE["cookieLastname"]) && isset($_COOKIE["cookieAge"])
-&& isset($_COOKIE["cookieGender"]) && isset($_COOKIE["cookieMail"]) && isset($_COOKIE["cookieZipcode"]) && isset($_COOKIE["cookieChoice"]))
+&& isset($_COOKIE["cookieGender"]) && isset($_COOKIE["cookieMail"]) && isset($_COOKIE["cookieZipcode"]) && isset($_COOKIE["cookieChoice"]) && isset($_COOKIE["cookieDescription"]))
 {
   $firstname = $_COOKIE["cookieFirstname"];
   $lastname = $_COOKIE["cookieLastname"];
@@ -10,7 +10,7 @@ if(isset($_COOKIE["cookieFirstname"]) && isset($_COOKIE["cookieLastname"]) && is
   $mail = $_COOKIE["cookieMail"];
   $zipcode = $_COOKIE["cookieZipcode"];
   $choice = $_COOKIE["cookieChoice"];
-  
+  $description = $_COOKIE["cookieDescription"];
 }
 else
 {
@@ -21,7 +21,9 @@ else
   $mail = "mailfaux";
   $zipcode = "codefaux";
   $choice = "choixfaux";   
+  $description = "aucune description";
 }
+
 
 
     function deleteAllCookie()

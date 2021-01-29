@@ -14,16 +14,31 @@
 </head>
 
 <body class="bodylovers">
-<nav class="navbar navbar-expand-lg navbar-light bg-light-dark">
-    <div class="container-fluid d-flex justify-content-between">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="../index.php">Accueil</a>
-        <a class="nav-link active" aria-current="page" href="">Nos célibataires</a>
-        <a class="nav-link" href="#"></a>
-        <a type="button" class="btn btn2  connexion " href="../views/user.php">Profil</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="container-fluid">
+      <!-- this is to make it responsive to your screen width -->
+      <div class="row">
+        <div class="col-md-4">
+          <!-- myClassName is defined in my CSS as you defined your container -->
+          <a class="navbar-brand" href="../index.php"><img src="/assets/img/logo22.png" height="60px" width="60px"></a>
+        </div>
       </div>
     </div>
-</nav>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item d-flex">
+          <a class="nav-link" href="">Nos célibataires</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+      <a type="button" class="btn2 btn connexion" href="../views/user.php">Profil</a></button>
+      </div>
+    </div>
+
+
+  </nav>
     <div class="container">    
         <div class= "row justify-content-between">
         <?php
@@ -259,13 +274,30 @@
                         <div class="card-body">                        
                             <div class="row">
                                 <div class="col-6">            
-                                    <h5 class="card-title">Card title</h5>
                                     <p class="card-text">
                                     <?php 
                                     if (is_array($value)) 
                                     {
                                         foreach ($value as $key => $value) {
-                                            echo $key . " : " . $value . "<br>";    
+                                            if($key == "Nom")
+                                            {
+                                                ?>
+                                                <h5 class="card-title"><?= $value ?>
+                                                <?php
+                                            }
+                                            elseif($key == "Prénom")
+                                            {
+                                                ?>
+                                                <?= $value ?>
+                                                </h5>
+
+                                                <?php
+                                            }
+                                            else
+                                            {
+                                                echo $key . " : " . $value . "<br>";
+                                            }
+                                                
                                         }
                                     }
                                     ?>        
@@ -274,7 +306,7 @@
                                 <div class= "col-6">
                                     <img class="img-fluid" id="photo" src="../assets/img/profils/<?= $idimage ?>.jpg"/>
                                 
-                                    <a href="#" class="btn btn-primary">J'aime <i class='far fa-thumbs-up' style='font-size:36px'></i></a>
+                                    <a href="#" class="btn btn-primary">J'aime <i class='far fa-thumbs-up' ></i></a>
                                     <a href="" class="btn btn-primary"><i class="far fa-envelope"></i> Contactez-moi</a>
                                 </div>
                             </div>                        
@@ -291,13 +323,30 @@
                         <div class="card-body">                        
                             <div class="row">
                                 <div class="col-6">            
-                                    <h5 class="card-title">Card title</h5>
                                     <p class="card-text">
                                     <?php 
                                     if (is_array($value)) 
                                     {
                                         foreach ($value as $key => $value) {
-                                            echo $key . " : " . $value . "<br>";    
+                                            if($key == "Nom")
+                                            {
+                                                ?>
+                                                <h5 class="card-title"><?= $value ?>
+                                                <?php
+                                            }
+                                            elseif($key == "Prénom")
+                                            {
+                                                ?>
+                                                <?= $value ?>
+                                                </h5>
+
+                                                <?php
+                                            }
+                                            else
+                                            {
+                                                echo $key . " : " . $value . "<br>";
+                                            }
+                                                
                                         }
                                     }
                                     ?>        

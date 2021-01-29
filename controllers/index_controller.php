@@ -13,7 +13,7 @@ if(isset($_COOKIE["cookieFirstname"]) && isset($_COOKIE["cookieLastname"]) && is
 else
 {
     if(!empty($_POST["firstname"]) && !empty($_POST["lastname"]) && !empty($_POST["age"]) && !empty($_POST["gender"]) 
-    && !empty($_POST["mail"]) && !empty($_POST["zipcode"]) && !empty($_POST["choice"]))
+    && !empty($_POST["mail"]) && !empty($_POST["zipcode"]) && !empty($_POST["choice"]) && !empty($_POST["description"]))
     {
         regexFirstName($_POST["firstname"]);
         regexLastName($_POST["lastname"]);
@@ -22,6 +22,7 @@ else
         regexMail($_POST["mail"]);
         regexZipcode($_POST["zipcode"]);
         setcookie("cookieChoice",$_POST["choice"], time()+3600*24, "/");
+        setcookie("cookieDescription", $_POST["description"], time()+3600*24, "/");
         header("Location: index.php");
         exit();
         

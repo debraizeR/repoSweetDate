@@ -17,19 +17,34 @@ if (isset($_POST["deleteCookie"])) {
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light-dark">
-        <div class="container-fluid">
+<body class="bodylovers">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="../index.php">Accueil</a>
-                <a class="nav-link active" aria-current="page" href="../views/lovers.php">Nos célibataires</a>
-                <a class="nav-link" href="#"></a>
-                <a type="button" class="btn2 btn connexion" href="">Profil</a></button>
-            </div>
-        </div>
-    </nav>
-    <div class="row justify-content-center">
+<div class="container-fluid">
+  <!-- this is to make it responsive to your screen width -->
+  <div class="row">
+    <div class="col-md-4">
+      <!-- myClassName is defined in my CSS as you defined your container -->
+      <a class="navbar-brand" href="../index.php"><img src="/assets/img/logo22.png" height="60px" width="60px"></a>
+    </div>
+  </div>
+</div>
+
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+    
+    <li class="nav-item d-flex">
+      <a class="nav-link" href="../views/lovers.php">Nos célibataires</a>
+    </li>
+  </ul>
+  <div class="d-flex">
+  <a type="button" class="btn2 btn connexion" href="">Profil</a></button>
+  </div>
+</div>
+
+
+</nav>
+    <div class="row justify-content-center my-3">
         <div class="col-8">
             <div class="card card1">
                 <div class="card-header">
@@ -37,13 +52,15 @@ if (isset($_POST["deleteCookie"])) {
                 </div>
                 <div class="card-body">
 
-                    <h5 class="card-text">Nom : <?= $firstname; ?></>
-                        <p>Prénom : <?= $lastname; ?></p>
-                        <p>Age : <?= $age; ?></p>
-                        <p>Genre : <?= $gender; ?></p>
-                        <p>Adresse mail : <?= $mail; ?></p>
-                        <p>Code postal : <?= $zipcode; ?></p>
-                        <p>Genre recherché : <?= $choice; ?></p <button><a href="#" class="btnprofil btn-primary">Modifier votre profil</a></button>
+                    <p class="h5">Nom : <?= $firstname; ?></p>
+                        <p class="h5">Prénom : <?= $lastname; ?></p>
+                        <p class="h5">Age : <?= $age; ?></p>
+                        <p class="h5">Genre : <?= $gender; ?></p>
+                        <p class="h5">Adresse mail : <?= $mail; ?></p>
+                        <p class="h5">Code postal : <?= $zipcode; ?></p>
+                        <p class="h5">Genre recherché : <?= $choice; ?></p>
+                        <p class="h5">Description : <?= $description; ?></p>
+                        
                 </div>
             </div>
         </div>
@@ -52,10 +69,10 @@ if (isset($_POST["deleteCookie"])) {
 
             <div class="col-4">
                 <form action="user.php" method="post">
-                    <button type="submit" class="btn justify-content-center" id="deleteCookie" name="deleteCookie">Supprimer les cookies</button>
+                    <button type="submit" class="btn btn2 justify-content-center" id="deleteCookie" name="deleteCookie">Supprimer les cookies</button>
                 </form>
-
-                <a type="button" class="btn justify-content-center" id="meetc" name="meetic" href="https://www.meetic.fr/">TAKE MY MONEY</a>
+                <br>
+                <a type="button" class="btn btn2 justify-content-center" id="meetc" name="meetic" href="https://www.meetic.fr/">TAKE MY MONEY</a>
             </div>
         </div>
     </div>
