@@ -130,3 +130,8 @@
   max-height: 3rem;
   max-width: 100%;
 }
+
+.carousel .carousel-item{
+  max-height: 400px;
+  
+}

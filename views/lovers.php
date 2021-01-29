@@ -20,7 +20,7 @@
         <a class="nav-link active" aria-current="page" href="../index.php">Accueil</a>
         <a class="nav-link active" aria-current="page" href="">Nos célibataires</a>
         <a class="nav-link" href="#"></a>
-        <a type="button" class="btn btn2  connexion " href="../views/user.php">Se connecter</a>
+        <a type="button" class="btn btn2  connexion " href="../views/user.php">Profil</a>
       </div>
     </div>
 </nav>

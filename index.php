@@ -12,8 +12,8 @@ if ($testCookie) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sweet Date</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo3.png">
 
@@ -94,26 +94,7 @@ if ($testCookie) {
       </div>
     </div>
   </div>
-  <div class="container" id="about">
-
-    <div class="row">
-      <div class="col-sm-6">
-        bonjour
-      </div>
-      <div class="col-sm-6">
-        <p>
-          Sweet Date est un site de rencontre par affinités, dédié aux célibataires appartenant aux catégories socioprofessionnelles supérieures.
-
-          Reposant sur le même test de personnalité, scientifique complet que celui utilisé par eDarling, les membres sont mis en relation en fonction de leurs exigences. L’efficacité de ce test de personnalité et de l’algorithme de compatibilité s’appuie sur le modèle des Big Five Personnality Traits. Ce procédé permet de déterminer la compatibilité des couples et de les mettre en relation avec les personnes qui leur correspondent le mieux.
-
-          EliteRencontre est un site pour célibataires privilégiés, aussi ambitieux dans leur vie personnelle que dans leur vie professionnelle et qui souhaitent rencontrer des personnes ayant le même statut social qu’eux.
-
-          EliteRencontre souhaite offrir un service haut de gamme à ses membres et leur permettre de rencontrer LA personne qui les comble vraiment.
-
-        </p>
-      </div>
-    </div>
-  </div>
+ 
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
@@ -130,5 +111,46 @@ if ($testCookie) {
     })
   </script>
 </body>
+<footer>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <!--Section mentions légales etc-->
+    <p>
+      <a data-bs-toggle="collapse" href="#collapseMentions" role="button" aria-expanded="false" aria-controls="collapseMentions" class="text-decoration-none">
+        Mentions légales
+      </a> - <a data-bs-toggle="collapse" href="#collapseCredits" role="button" aria-expanded="false" aria-controls="collapseCredits" class="text-decoration-none">
+        Crédits
+      </a>
+    </p>
+      <div class="collapse" id="collapseMentions">
+        <div class="card card-body">
+
+          <p>
+          <h5>Sweet Date</h5>
+
+          Siège social : 10 Place Léon Meyer<br>
+          Nom du responsable : X<br>
+          Téléphone : X<br>
+          Capital social : X<br>
+          N° SIRET : X<br>
+          Editeur du site : X<br>
+
+          <h5>Conception</h5>
+          Le site a été conçu et réalisé par La Manu.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="collapse" id="collapseCredits">
+        <div class="card card-body">
+          Crédits photos : 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
 
 </html>
